@@ -1,9 +1,14 @@
+@font-face { font-family: Gotham; src: url('GothamSSm-Medium.otf'); } 
+@font-face { font-family: Gotham; font-weight: bold; src: url('GothamSSm-Bold.otf');}
+
+
 * {
   box-sizing: border-box;
 }
 
 html {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Gotham';
+  
   display: table;
   margin: auto;
   height: 80%;
@@ -28,9 +33,9 @@ nav {
 article {
   float: left;
   width: 65%;
-  text-align-last: center;
+  padding-left: 1em;
+  /* text-align-last: center; */
 }
-
 
 section::after {
   content: "";
@@ -40,6 +45,12 @@ section::after {
 
 p {
   margin: 0.5em;
+  color: #9d865c;
+}
+
+.name {
+  font-weight: 700;
+  color: #086c38;
 }
 
 .websiteLink {
@@ -51,6 +62,14 @@ p {
 .otherLinks {
   margin-top:1em;
 }
+
+a {
+  color: rgb(0, 86, 179);
+}
+a:visited { 
+  text-decoration: none; 
+  color: rgb(0, 86, 179);
+ }
 
 @media (max-width: 600px) {
   nav, article {
