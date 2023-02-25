@@ -1,0 +1,61 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: 'Roboto', sans-serif;
+  display: table;
+  margin: auto;
+  height: 80%;
+  width: 85%;
+}
+
+body {
+  display: table-cell;
+  vertical-align: middle;
+  max-width: 85%;
+  max-height: 80%;
+}
+
+section {
+  background: whitesmoke;
+}
+
+nav {
+  float: left;
+  width: 40%;
+  padding: 1rem;
+}
+
+article {
+  float: left;
+  width: 50%;
+}
+
+
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+p {
+  margin: 0.5em;
+}
+
+.websiteLink {
+  margin: auto;
+  width: fit-content;
+  display: block;
+}
+
+.otherLinks {
+  margin-top:1em;
+}
+
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
