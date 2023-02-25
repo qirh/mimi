@@ -18,12 +18,12 @@ body {
 }
 
 section {
-  background: whitesmoke;
+  background: rgb(250, 249, 249);
 }
 
 nav {
   float: left;
-  width: 40%;
+  width: 35%;
   padding: 1rem;
 }
 
